@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>就是i愛雜學 | 知識點餐吧 12.14.2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 12.14.2025 更新：精準提取自 Figma 截圖的配色規格 */
+        :root {
+            --figma-sky: #AEEBFA;    /* 清新水藍色主調 */
+            --figma-navy: #1E3A8A;   /* 品牌深藍色 */
+            --figma-gray: #F3F4F6;   /* 乾淨背景底色 */
+            --accent-gold: #FFD700;  /* 1% 顯學金色 */
+        }
+        
+        body { background-color: var(--figma-gray); font-family: 'Noto Sans TC', sans-serif; }
+        
+        /* 視覺優化：還原 Figma 的 30px 大圓角卡片 */
+        .card-radius { border-radius: 30px; }
+        .glass-effect { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        
+        /* 動態效果：讓點餐按鈕有生命感 */
+        .add-btn { transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .add-btn:active { transform: scale(0.9); }
+        
+        /* 防止內容被底部選單遮擋 */
+        .content-padding { padding-bottom: 120px; }
+    </style>
+</head>
+<body class="content-padding">
+
+    <header class="header-section p-8 text-center bg-white border-b border-blue-50 sticky top-0 z-50 glass-effect">
+        <div class="w-20 h-20 bg-[--figma-sky] rounded-full mx-auto mb-4 flex items-center justify-center shadow-sm">
+            <span class="text-2xl">🎙️</span>
+        </div>
+        <h1 class="text-2xl font-black text-[--figma-navy]">就是i愛雜學</h1>
+        <p class="text-[10px] mt-2 text-gray-400 tracking-widest uppercase italic">The 1% Insight Hub</p>
+    </header>
+
+    <section class="bg-[--figma-navy] text-white py-2 overflow-hidden">
+        <marquee scrollamount="5" class="text-xs font-bold tracking-widest">
+            🌍 知識無界，人人會的 1% 顯學，開啟人生無限可能！！！ --- 多元學習 --- 激發靈感 --- 共同成長 ---
+        </marquee>
+    </section>
+
+<section class="about-section p-6">
+        <div class="bg-white card-radius p-8 shadow-sm border border-blue-50">
+            <h2 class="text-lg font-bold mb-4 text-[--figma-navy] flex items-center">
+                <span class="mr-2">🧩</span> 關於雜學宇宙
+            </h2>
+            <p class="text-sm text-gray-600 leading-relaxed mb-6">
+                歡迎收聽《就是i愛雜學》：一個屬於你的知識冒險空間。這不只是個 Podcast，更是你自由學習、自在成長的基地。我們用輕鬆、溫暖、朋友系的風格，帶你探索心理學、人際與生活觀察。
+            </p>
+            
+            <section class="insight-banner flex items-center text-[11px] font-bold text-blue-500 bg-blue-50 p-3 rounded-2xl">
+                <span>✨ 1% 顯學：你以為普通的小見解，其實最能改變人生。</span>
+            </section>
+        </div>
+    </section>
+
+    <section class="music-player px-6 mb-8">
+        <div class="bg-white card-radius p-5 flex items-center border border-[#AEEBFA] shadow-sm">
+            <div class="w-12 h-12 bg-[--figma-navy] rounded-full flex items-center justify-center text-white mr-4">🎵</div>
+            <div class="flex-grow">
+                <h4 class="text-sm font-bold text-[--figma-navy]">創業專題曲：覺醒瞬間</h4>
+                <p class="text-[10px] text-gray-400">Suno AI 客製化特調</p>
+            </div>
+            <button class="px-4 py-2 bg-[--figma-sky] rounded-full text-[10px] font-bold text-blue-700">播放</button>
+        </div>
+    </section>
+
+    <section class="knowledge-menu px-6 space-y-4">
+        <h3 class="font-bold text-gray-400 text-[10px] ml-2 uppercase tracking-widest">今日推薦 (Knowledge Menu)</h3>
+        
+        <div class="bg-white card-radius p-4 flex items-center shadow-sm border border-blue-50 group">
+            <div class="w-20 h-20 bg-[--figma-sky] rounded-2xl overflow-hidden mr-4 flex-shrink-0 relative">
+                <div class="absolute inset-0 flex items-center justify-center text-blue-200">🖼️</div>
+            </div>
+            <div class="flex-grow">
+                <span class="text-[9px] font-bold text-blue-400 bg-blue-50 px-2 py-0.5 rounded-full">#Podcast EP.65</span>
+                <h4 class="font-bold text-[--figma-navy] text-sm mt-1">1% 顯學的跨維度應用</h4>
+                <p class="text-[10px] text-gray-400 mt-1">🕒 25min · 朋友系對話</p>
+            </div>
+            <button class="add-btn w-10 h-10 bg-[--figma-sky] rounded-full shadow-md flex items-center justify-center font-bold text-white text-xl">
+                ＋
+            </button>
+        </div>
+    </section>
+
+    <nav class="bottom-nav fixed bottom-0 left-0 right-0 glass-effect p-6 flex justify-around items-center border-t border-blue-50 z-50">
+        <div class="text-center text-[--figma-navy]">
+            <span class="text-xl">🏠</span>
+            <span class="block text-[9px] font-bold mt-1">首頁</span>
+        </div>
+        <div class="text-center opacity-30 text-[--figma-navy]">
+            <span class="text-xl">📊</span>
+            <span class="block text-[9px] font-bold mt-1">財商</span>
+        </div>
+        <div class="relative text-center">
+            <span class="text-xl">🛒</span>
+            <span class="block text-[9px] font-bold mt-1">學習包</span>
+            <span class="absolute -top-1 -right-2 bg-red-500 text-white text-[8px] w-4 h-4 rounded-full flex items-center justify-center">8</span>
+        </div>
+        <div class="text-center opacity-30 text-[--figma-navy]">
+            <span class="text-xl">👤</span>
+            <span class="block text-[9px] font-bold mt-1">我的</span>
+        </div>
+    </nav>
+
+    <script>
+        // 未來在此加入 Blogger API 與 Podcast RSS 抓取邏輯
+        console.log("就是i愛雜學：數位總部已就緒。");
+    </script>
+</body>
+</html>
